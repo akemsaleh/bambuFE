@@ -80,7 +80,7 @@ const changeChartPage = (e)=>{
    document.getElementById("stock-name").innerHTML = data.descr;
    document.getElementById("stock-short").innerHTML = `${data.abbrev} (${data.code})`;
 
-   if (e) { document.querySelector(".active").classList.remove("active"); }
+   if (document.querySelector(".active")) { document.querySelector(".active").classList.remove("active"); }
    document.getElementById(`mnu_${selection}`).classList.add("active");
 
    document.querySelectorAll('title')[0].innerHTML += ` : ${data.abbrev}`;
