@@ -124,7 +124,7 @@ class Chart{
          chartBase.appendChild(chartPeriod);
       }
 
-      chartBase.setAttribute("transform","translate(20,20)");
+      chartBase.setAttribute("transform",`translate(${this.margin},${this.margin})`);
 
       return chartBase;
    };
@@ -187,7 +187,7 @@ class Chart{
          chartItem.setAttribute("transform",`translate(${coord.itemX},${coord.itemY})`);
          chartData.appendChild(chartItem);
       }
-      chartData.setAttribute("transform","translate(20,20)");
+      chartData.setAttribute("transform",`translate(${this.margin},${this.margin})`);
       return chartData;
    };
 
